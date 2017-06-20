@@ -25,4 +25,7 @@ include(FindOGRE)
 include_directories(
 	${OGRE_INCLUDE_DIRS}
 )
-target_link_libraries(ogre21test ${OGRE_LIBRARIES})
+target_link_libraries(ogre21test
+    ${OGRE_LIBRARIES}
+    ${Boost_PROGRAM_OPTIONS_LIBRARY}
+)
